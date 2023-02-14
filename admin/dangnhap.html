@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThaoLinh Mobile | Admin</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/base.css">
+
+</head>
+
+<body style="margin: 0;">
+    <div class="app">
+        <header class="header">
+                <div class="header__logo">
+                    <div class="logo">
+                          <a href="/" class="header__logo-link">
+                            <img src="../img/logo2.png" alt="logo" class="logo-img">
+                        </a>
+                        <a href="/" class="header__logo-name-link">
+                            <h3 class="logo-name">THẢO LINH MOBILE</h3>
+                        </a>
+                    </div>
+                    <div class="header__navbar-item ">
+                        <a href="" class="header__navbar-item__link"> Đăng nhập</a>
+                    </div> 
+                </div> 
+        </header>
+        <div class="app__container">
+            <!-- <div class="grid">
+                <div class="grid__row app__content">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <!-- <h3 class="category-heading">Sản Phẩm</h3> -->
+                            <!-- <ul class="category-list">
+                                <li class="category-item category-item--active">
+                                    <a href="./" class="category-item__link">
+                                        <i class="fas fa-home"></i>
+                                        Trang chủ
+                                    </a>
+                                </li>
+                                <li class="category-item ">
+                                    <a href="" class="category-item__link">
+                                        <i class="fas fa-baby-carriage"></i>
+                                        Quản lí đơn hàng
+                                    </a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="" class="category-item__link">
+                                        <i class="fas fa-mobile"></i>
+                                        Quản lí loại sản phẩm
+                                    </a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="./quanlysanpham.html" class="category-item__link">
+                                        <i class="fal fa-phone-square-alt"></i>
+                                        Quản lí sản phẩm
+                                    </a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="" class="category-item__link">
+                                        <i class="fas fa-handshake"></i>
+                                        Quản lý nhà cung cấp
+                                    </a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="" class="category-item__link">
+                                        <i class="fas fa-portrait"></i>
+                                        Quản lí khách hàng
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>  -->
+
+                    <!-- <div class="grid__column-10">
+                        <div class="home-filter"> 
+                            <h3 class="home-filter__header">Thống kê cửa hàng</h3>
+                                <div class="home-filter-1">
+                                    <div class="grid__column-4">
+                                        <span class="grid__column-soluong"></span>
+                                        <p class="grid__column-tentk">Khách hàng</p>
+                                    </div>
+                                    <div class="grid__column-4">
+                                        <span class="grid__column-soluong">5</span>
+                                        <p class="grid__column-tentk">Loại sản phẩm</p>
+                                    </div>
+                                    <div class="grid__column-4">
+                                        <span class="grid__column-soluong">5</span>
+                                        <p class="grid__column-tentk"> Sản phẩm</p>
+                                    </div>
+                                    <div class="grid__column-4">
+                                        <span class="grid__column-soluong">30.000.000</span>
+                                        <p class="grid__column-tentk">Tổng doanh thu</p>
+                                    </div>
+                                </div>
+                            <h3 class="home-filter__header">Thống kê đơn hàng</h3>
+                                <div class="home-filter-1">
+                                    <div class="grid__column-4">
+                                        <span class="grid__column-soluong">10</span>
+                                        <p class="grid__column-tentk">Đơn hàng</p>
+                                    </div>
+                                    <div class="grid__column-4">
+                                        <span class="grid__column-soluong">5</span>
+                                        <p class="grid__column-tentk">Đã đặt</p>
+                                    </div>
+                                    <div class="grid__column-4">
+                                        <span class="grid__column-soluong">3</span>
+                                        <p class="grid__column-tentk">Đã giao</p>
+                                    </div>
+                                    <div class="grid__column-4">
+                                        <span class="grid__column-soluong">2</span>
+                                        <p class="grid__column-tentk">Đang giao</p>
+                                    </div>
+                                    <div class="grid__column-4">
+                                        <span class="grid__column-soluong">1</span>
+                                        <p class="grid__column-tentk">Đã hủy</p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div> -->
+                <!-- </div>
+            </div> -->
+        </div>
+    </div>
+    <!-- modal layout (đang ký/dang nhap) -->
+    <div class="modal">
+        <div class="modal__overlay"></div>
+       
+        <div class="modal__body"> 
+    
+         <!-- login form -->
+            <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="dangnhap">Đăng nhập</h3>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email của bạn">     
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                        </div>
+                                
+                        </div>
+                        <div class="auth-form__nut">
+                            <button class="nut nutdangnhap">ĐĂNG NHẬP</button>
+                        </div>
+                        <div class="auth-form__pass">
+                            <div class="auth-form__help">
+                                <a href="" class="auth-form__help-link auth-form__help-quenmk ">Quên mật khẩu</a>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>  
+</body>
+
+</html>

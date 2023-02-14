@@ -1,0 +1,263 @@
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+div{
+    border: 2px solid black;
+    width: 200px;
+    height: 100px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(223, 114, 5);
+}
+#logo{
+    width: 150px; 
+    height: 60px;
+    margin: 20px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.logo{
+    border: 0;
+}
+.search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+    height:60px;
+    margin: 20px 0;
+    border-radius: 20px;
+    background-color: whitesmoke;
+}
+.timkiem{
+    width: 500px;
+    height: 30px;
+    margin: 15px 15px;
+    border: 0;
+    background-color: whitesmoke;
+}
+.fa-search{
+    width: 30px;
+    height: 30px;
+    margin: 15px 15px;
+    border: 0;
+}
+.fa-search::before{
+    content: "\f002";
+    display: inline;
+    font-family: FontAwesome;
+    font-size: 30px;
+}
+.tkhoan{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border:0;
+}
+.taikhoan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    padding: 20px 0;
+    border:0;
+}
+.taikhoan > div{
+    border: 0;
+    width: 100px;
+    height: auto;
+    text-align: center;
+    color: whitesmoke;
+}
+.fa-user::before{
+    content: "\f007";
+    display: inline;
+    font-family: FontAwesome;
+    font-size: 50px;
+    
+}
+.tkhoan:hover .chucnang{
+    display: block;
+    position: absolute;
+    top:80px;
+}
+.chucnang{
+    display: none;
+}
+.chucnang ul{
+    background-color: whitesmoke;
+    width: 180px;
+    margin-left: -60px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.chucnang ul li{
+    background-color: turquoise;
+    color: whitesmoke;
+    width: 160px;
+    list-style-type: none;
+    margin: 10px;
+    margin-left: 10px;
+    padding: 3px 0;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.chucnang ul li:hover{
+    background-color: rgb(75, 64, 224);
+}
+
+.giohang{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 200px;
+    height: auto;
+    padding: 30px 30px;
+    border:0;
+}
+.giohang > div{
+    border: 0;
+    width: fit-content;
+    height: auto;
+    color: whitesmoke;
+}
+.fa-shopping-cart::before{
+    content: "\f07a";
+    display: inline;
+    font-family: FontAwesome;
+    font-size: 30px;
+}
+#body{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    border: 0;
+}
+body >div{
+    margin-bottom: 10px;
+}
+.danhmuc{
+    flex-grow: 1;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-right: 10px;
+}
+.danhmuc > div{
+    border: 0;
+    height: auto;
+}
+.ttsanpham{
+    flex-grow: 6;
+    background-color: rgb(223, 114, 5);
+    height: 100%;
+    width: 100%;
+}
+.ttsanpham > div{
+    background: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 80%;
+    margin: 20px 10%;
+    
+}
+.thongtin{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    width: 100%;
+    margin: 10px 0;
+    height: auto;
+    border: 0;
+}
+.anhsanpham{
+    width: 35%;
+    margin: 10px;
+    height: auto;
+    border: 0;
+}
+.anhsanpham img{
+    width: 100%;
+    height: 70%;
+    margin: 10px;
+}
+.ttsp{
+    width: 35%;
+    margin: 10px;
+    height: auto;
+    border: 0;
+}
+.chitiet{
+    width: 80%;
+    height: 300px;
+    margin: 10px auto;
+}
+.giasp, .khuyenmaisp, .themvaogiohang, .soluong, .btnadd{
+    width: 80%;
+    height: auto;
+    margin: 10px auto;
+    border: 0;
+}
+.themvaogiohang{
+    display: flex;
+    flex-direction: row;
+    border: 0;
+}
+.soluong, .btnadd{
+    border: 0;
+    flex-grow: 1;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#soluong{
+    width: 40%;
+}
+.chitiet-baohanh{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    border: 0;
+}
+.chitietccuthe, .baohanh{
+    width: 40%;
+    height: 300px;
+    margin: 10px;
+}
+.mota{
+    width: 100%;
+    height: auto;
+    border: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.chitietmota{
+    width: 90%;
+    height: 300px;
+    margin: 10px;
+}
+
+
+

@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+:root{
+    --with-color: #fff;
+    --back-color: #000;
+    --texxt-color: #333;
+   
+    --header-with-search-height: calc(var(--header-height)- var(--navbar-height));
+}
+*{
+    box-sizing: inherit;
+}
+
+.grid__row1 {
+    display: flex;
+    margin-right: -5px;
+    margin-left: -5px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+html{
+    font-size: 100%;
+    line-height: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+}
+/* responsive */
+.grid{
+    width: 95%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grid__full-width{
+    width: 100%;
+}
+.grid__row{
+    display: flex;
+    margin-right: -5px;
+    margin-left: -5px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+/* Test */
+.grid__column-2{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+.grid__column-2-4{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 19%;
+}
+.grid__column-10{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 80%;
+    margin: 0 auto;
+}
+.grid__column-4{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 25%;
+}
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes growth{
+    from{
+        transform: scale(var(--growth-from));
+    }
+    to{
+        transform: scale(var(--growth-to));
+    }
+}
+/* Modal */
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    animation: fadeIn  linear 0.1s;
+}
+.modal__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.modal__body{
+    --growth-from: 0.7;
+    --growth-to: 1;
+    margin: 50px 400px;
+    position: relative;
+    animation: growth linear 0.1s;
+}
+/* button style */
+.btn{
+    height: 34px;
+    min-width: 124px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 0.9rem;
+    outline: none;
+    cursor: pointer;
+    display: inline-flex;
+    color: var(--texxt-color);
+    align-items: center;
+    justify-content: center;
+    padding: 0 8px;
+    line-height: 1.4rem;
+}
+.btn.btn--normal:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.btn.btn--primary{
+    color: white;
+    background-color: #272adf;
+    border: none;
+    border-radius: 2px;
+}
+
+/* .btn.btn--disabled{
+    cursor: default;
+    background-color: #D3D3D3;
+} */
+.btn.btn--size-s{
+    width: 170px;
+    height: 32px;
+    font-size: 11px;
+    padding: 0 2px;
+}
+/* selection */
+.select-input{
+position: relative;
+min-width: 200px;
+height: 34px;
+padding: 0 8px;
+border-radius: 2px;
+background-color: white;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.select-input__icon{
+    font-size: 1.2rem;
+    color: rgba(131, 131, 131, 131);
+    position: relative;
+    top: 1px;
+}
+.select-input__list{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20px;
+    border-radius: 2px;
+    background-color: white;
+    padding: 8px 16px;
+    list-style: none;
+    display: none;
+    z-index: 1;
+}
+.select-input:hover .select-input__list{
+    display: block;
+}
+.select-input__link{
+    font-size: 0.9rem;
+    color: var(--text-color);
+    text-decoration: none;
+    display: block;
+    padding: 4px 0;
+}
+.select-input__link:hover{
+    color: orangered;
+}
+/* PhÃ¢n trang */
+.phantrang{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+   
+}
+.phantrang-item{
+    margin: 0 8px;
+}
+.phantrang-item--active .phantrang-item__link{
+    color: white;
+    background-color: rgb(240, 97, 45);
+}
+.phantrang-item--active .phantrang-item__link:hover{
+    background-color: rgb(238, 107, 59);
+}
+.phantrang-item__link{
+    --height: 30px;
+    display: block;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #939393;
+    min-width: 40px;
+    height: var(--height);
+    text-align: center;
+    line-height: var(--height);
+    border-radius: 2px;
+}

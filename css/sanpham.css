@@ -1,0 +1,345 @@
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.ttsanpham {
+  flex-grow: 6;
+  height: 100%;
+  width: 100%;
+}
+.ttsanpham > div > div {
+  margin: 20px;
+  border-radius: 20px;
+  background: white;
+}
+.ttsanpham > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.thongtin {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin: 10px 0;
+  height: auto;
+  border: 0;
+}
+.anhsanpham {
+  width: 35%;
+  margin: 10px;
+  height: auto;
+  border: 0;
+  display: flex;
+}
+.anhsanpham img {
+  /* width: 500px; */
+  height: 500px;
+  margin: 0 auto;
+}
+.ttsp {
+  width: 35%;
+  margin: 10px;
+  height: auto;
+  border: 0;
+}
+.chitiet {
+  height: 300px;
+  margin: 10px auto;
+  margin-top: 40px;
+}
+.themvaogiohang,
+.soluong,
+.btnadd {
+  width: 80%;
+  height: auto;
+  margin: 10px auto;
+  border: 0;
+}
+.themvaogiohang {
+  display: flex;
+  flex-direction: row;
+  border: 0;
+}
+.soluong,
+.btnadd {
+  border: 0;
+  flex-grow: 1;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#soluong {
+  width: 40%;
+}
+.chitiet-baohanh {
+  background: whitesmoke !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: auto;
+  border: 0;
+}
+.chitietccuthe,
+.baohanh {
+  width: 40%;
+  height: 300px !important;
+  margin: 10px;
+  overflow-y: auto;
+}
+.mota {
+  width: 100%;
+  height: auto;
+  border: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.chitietmota {
+  width: 90%;
+  height: 300px;
+  margin: 10px;
+}
+
+.giakm {
+  display: flex;
+  justify-content: space-around;
+}
+.giakm > div {
+  width: 45%;
+}
+.chitiet-container {
+  display: flex;
+  justify-content: space-around;
+}
+.chitiet-item {
+  width: 50%;
+}
+.chitietmota {
+  height: 350px;
+  overflow: hidden;
+}
+.chitietmota-on {
+  height: auto;
+}
+#chitietmota img {
+  margin: 10px 250px;
+}
+.mota {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.mota button,
+.btnadd button {
+  width: 150px;
+  padding: 10px;
+  margin: 5px 450px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  color: #7d2ae8;
+  background: white;
+  font-weight: bolder;
+  border: 2px solid #7d2ae8;
+  z-index: 2;
+}
+.mota button:hover,
+.btnadd button:hover,
+.soluong button:hover {
+  background: linear-gradient(90deg, #00c4cc, #7d2ae8);
+  border: 2px solid;
+  color: white;
+}
+.chitiet-baohanh > div {
+  padding: 20px;
+  border-radius: 20px;
+  background: white;
+  height: auto;
+}
+#hiensp {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  height: 120px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.384),
+    rgba(255, 255, 255, 0.678),
+    white,
+    white
+  );
+  width: 100%;
+  z-index: 1;
+}
+.chitiet-container {
+  border: 2px solid grey;
+  /* margin-bottom: 5px; */
+  border-bottom: 0;
+}
+.chitiet-container b {
+  color: white;
+  background: #5858e0;
+  display: flex;
+  padding: 10px;
+}
+.chitiet-item1 {
+  font-weight: bold;
+  border-left: 2px solid grey;
+  padding-left: 10px;
+  width: 50%;
+}
+h4 {
+  color: #7d2ae8;
+}
+.tensp {
+  font-weight: bold;
+  font-size: 30px;
+  padding-top: 60px;
+  margin: 20px 0;
+}
+.thuonghieu {
+  font-size: 13px;
+}
+.thuonghieu b {
+  color: #7d2ae8;
+}
+.giasp {
+  font-weight: bolder;
+  font-size: 30px;
+  color: red;
+}
+.btnadd button {
+  margin: auto;
+}
+.soluong input::-webkit-outer-spin-button,
+.soluong input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.khuyenmaisp b {
+  color: red;
+  border: 2px solid red;
+  background: white;
+  padding: 2px;
+  border-radius: 5px;
+}
+.cokhuyenmai {
+  font-size: 15px;
+  font-weight: bold;
+}
+.cokhuyenmai b {
+  color: #7d2ae8;
+}
+.soluong button {
+  border-radius: 10px 0 0 10px;
+  color: #7d2ae8;
+  background: white;
+  font-weight: bolder;
+  border: 2px solid #7d2ae8;
+  font-size: 20px;
+}
+#add {
+  border-radius: 0 10px 10px 0;
+}
+.soluong input {
+  border: 2px solid #7d2ae8;
+  border-left: 0;
+  border-right: 0;
+  padding: 0 10px;
+  color: #7d2ae8;
+  font-weight: bolder;
+}
+.stars {
+  width: 270px;
+  display: inline-block;
+}
+
+input.star {
+  display: none;
+}
+
+label.star {
+  float: right;
+  padding: 10px;
+  font-size: 36px;
+  color: #444;
+  transition: all 0.2s;
+}
+
+input.star:checked ~ label.star:before {
+  content: "\f005";
+  color: #fd4;
+  transition: all 0.25s;
+}
+
+input.star-5:checked ~ label.star:before {
+  color: rgb(251, 255, 0);
+  text-shadow: 0 0 10px rgb(226, 82, 149);
+}
+
+input.star-1:checked ~ label.star:before {
+  color: #f62;
+}
+
+label.star:hover {
+  transform: rotate(-15deg) scale(1.3);
+}
+
+label.star:before {
+  content: "\f006";
+  font-family: FontAwesome;
+}
+.danhgia{
+    width:95%;
+    height:120px;
+    padding:15px 2.4%;
+    border-radius:10px;
+}
+.btn-danhgia{
+    display: inline;
+    margin: 0 !important;
+}
+.box-danhgia{
+    display: flex;
+    justify-content: space-around;
+}
+.form-danhgia{
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+}
+.item-danhgia{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-radius: 10px;
+  background-image: linear-gradient(to left, white, #fda2ba);
+  padding: 20px;
+  margin: 10px 0;
+}
+.item-danhgia > b{
+  margin: auto 0;
+  height: fit-content;
+  padding: 20px;
+}
+.item-danhgia > a > button{
+  text-decoration: none;
+  margin: 0 !important;
+  height:auto !important;
+}
+.item-danhgia > a {
+  margin: auto 0;
+  height: fit-content;
+  text-decoration: none;
+}
+#chitietmota3{
+  overflow-y: auto;
+  width: 98%;
+}

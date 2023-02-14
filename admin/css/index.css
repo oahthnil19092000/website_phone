@@ -1,0 +1,427 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+/* @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+} */
+*{
+    box-sizing: inherit;
+}
+:root{
+    --with-color: #fff;
+    --back-color: #000;
+    --texxt-color: #333;
+   
+    --header-with-search-height: calc(var(--header-height)- var(--navbar-height));
+}
+.grid__row1 {
+    display: flex;
+    margin-right: -5px;
+    margin-left: -5px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+html{
+    font-size: 100%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+/* responsive */
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grid__full-width{
+    width: 100%;
+}
+.grid__row{
+    display: flex;
+    margin-right: -5px;
+    margin-left: -5px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+/* Test */
+.grid__column-2{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 23%;
+}
+.grid__column-10{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 87%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: white;
+}
+.nut{
+    height: 34px;
+    min-width: 124px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 0.9rem;
+    outline: none;
+    cursor: pointer;
+    display: inline-flex;
+    color: var(--texxt-color);
+    align-items: center;
+    justify-content: center;
+    padding: 0 8px;
+    line-height: 1.4rem;
+}
+
+.nut.nut--themsp{
+    color: white;
+    background-color: #3252e4;
+    border: none;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+
+.header{
+    height: 65px;
+    /* background-image: linear-gradient(0, #fe6433, #f53e2d); */
+    background: linear-gradient(90deg,#00c4cc,#7d2ae8)
+}
+ .header__navbar-item{
+    margin: 0 20px;
+    position: relative;
+    min-height: 26px;
+    display: flex;
+    justify-content: flex-end;
+   
+}
+.header-with-search {
+    display: flex;
+    justify-content: space-between;
+}
+.header__navbar-item__link{
+    padding-right: 1px;
+}
+.header__navbar-item,
+.header__navbar-item__link{
+    display: inline-block;
+    font-size: 0.9rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+.logo{
+    display: flex;
+}
+
+.header__logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo-link{
+    color: transparent ;
+    text-decoration: none;
+}
+.header__logo-name-link{
+    color: rgb(241, 191, 24);
+    text-decoration: none;
+}
+.avt{
+    font-size: 20px;
+    margin-right: 2px;
+  }
+.logo-name{
+    align-items: center;
+
+}
+.logo-img{
+    height: 40px;
+    width: 40px;
+    margin-left: 0;
+    border-radius: 50%;
+    padding: 10px;
+}
+.avt{
+    font-size: 20px;
+    margin-right: 2px;
+  }
+/* App container */
+.app__container{
+    background-color: #F5F5F5;
+}
+.app__content{
+    padding-top: 25px;
+    padding-bottom: 25PX;
+    display: flex;
+    /* flex-direction: row; */
+}
+.category{
+    border-radius: 2px;
+    background-color: white;
+}
+.category-item{
+    position: relative;
+}
+
+.category-item:first-child::before{
+    display: none;
+}
+.category-item::before{
+    content: "";
+    border-top: 1px solid #E1E1E1;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    left: 20px;
+}
+.category-list{
+    padding:0 0 8px 0;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+
+}
+.category-item--active .category-item__link{
+    color: rgb(54, 140, 238);
+}
+
+.category-item__link{
+    position: relative;
+    text-decoration: none;
+    padding: 6px 20px;
+    color: #777;
+    display: block;
+    font-size: 0.9rem;
+
+}
+.category-item__link:hover{
+    color: rgb(54, 140, 238);
+}
+
+.auth-form{
+    width: 500px;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    /* display: none; */
+}
+.auth-form__container{
+    padding: 0 32px;
+   
+}
+.auth-form__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+    margin-top: 10px;
+}
+
+.auth-form__form{
+    margin-top: 16px;
+}
+.auth-form__input{
+    width: 94%;
+    height: 30px;
+    margin-bottom: 20px;
+    padding: 0 12px;
+    font-size: 0.8rem;
+    border: 1px dotted #dbdbdb;
+    border-radius: 2px;
+    outline: none ;
+}
+.auth-form__input:focus{
+    border-color: #888;
+}
+
+.auth-form__policy-text{
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    text-align: center;
+    padding: 0 2px;
+}
+.auth-form__text-link{
+    text-decoration: none;
+    color: #EE4D2D ;
+}
+.auth-form__nut{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-left: 35%;
+}
+.nut-form__help{
+    display: flex;
+}
+.auth-form__help-quenmk{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: blue;
+}
+.nut.nutdangnhap{
+    color: white;
+    background-color: #2291d1;
+    border: none;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+/* trang chủ */
+.home-filter{
+    background-color: white!important;
+}
+.home-filter__header{
+    margin-left: 15px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #f1148e;
+}
+.home-filter-1{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 17px;
+}
+.grid__column-4{
+    border: 2px solid rgb(25, 212, 245);
+    border-radius: 3px;
+    background-color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    
+}
+.grid__column-soluong{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.grid__column-tentk{
+    display: flex;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: rgb(39, 13, 184);
+}
+/* Quan lí sản phẩm */
+.btn_themsp{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+table, th, td{
+    border: 1px solid white;
+    border-collapse: collapse;
+   
+  }
+th{
+    background-color: rgb(54 140 238);
+    color: white;
+    font-weight: 500;
+}
+td{
+    background-color: rgb(218 255 253);
+}
+table{
+    text-align: center;
+    font-size: 0.8rem;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.img_sp{
+    width:100%; 
+    height: 100%;
+    border-radius: 3px;
+}
+
+.sp_icon{
+    margin: 0 5px 0 5px;
+}
+/* Quanli san pham */
+.qlsp_link{
+    text-decoration: none;
+    margin: 15px;
+    color: #777;
+    font-size: 0.9rem;
+}
+.qlsp_link:hover{
+    color: rgb(38, 112, 248);
+}
+.img_dh{
+    width: 80%;
+    height: 80%;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+.iconhd{
+    text-decoration: none;
+    flex-grow: 1;
+}
+.nutdh{
+    margin: 0;
+    background-color: blue;
+    color: white;
+    border-radius: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.nuthdh{
+    width: 96%;
+    color: white;
+    border-radius: 2px;
+    background-color: crimson;
+}
+.icon{
+    text-decoration: none;
+    color: rgb(238, 17, 190);
+    margin: 0 30px;
+}
+.icon-xem{
+    text-decoration: none;
+    color: blue;
+}
+.icon-sua{
+    text-decoration: none;
+    color: black;
+}
+.icon-xoa{
+    text-decoration: none;
+    color: red;
+}
+.timkiem{
+    margin: 5px;
+    border: 1px solid rgb(57, 10, 230);
+    border-radius: 2px;
+}
+.btn_themsp input{
+    padding: 5px;
+    width: 300px;
+    border: none;
+    outline: none;
+}
+.icon_timkiem{
+    border: none;
+    background: white;
+    color: rgb(57, 10, 230);
+}
+.nutxdh{
+    width: 98%;
+    background: green;
+}
+.home-filter{
+    
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 600px;
+
+}

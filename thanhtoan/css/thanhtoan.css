@@ -1,0 +1,113 @@
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  /* background-color: rgba(0, 0, 0, 0.4);  */
+  background-image: url("../../img/background.png");
+  background-size: 100% 100%;
+  padding-top: 65px;
+}
+.modal .close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-weight: bold;
+}
+.thanhtoan .modal-content {
+  width: 50%;
+  background-color: #fefefe;
+  margin: 0 auto;
+  border: 1px solid #888;
+  border-radius: 30px;
+}
+.modal .animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+.modal h1 {
+  text-align: center;
+  padding: 0;
+  color: #047baa;
+}
+.modal input[type="text"],
+.modal input[type="password"],
+.modal input[type="number"],
+.modal input[type="email"],
+.modal input[type="tel"],
+.modal input[type="date"],
+.modal select,
+.modal input[list] {
+  width: 100%;
+  padding: 5px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+label {
+  color: #047baa;
+  font-weight: bold;
+}
+.hinhthucthanhtoan > div {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+.thanhtoantienmat {
+  background: url("../../img/tienmat.png");
+  width: 150px;
+  height: 90px;
+  background-size: 100% 100%;
+  border-radius: 10px;
+  border: 2px solid grey;
+}
+.thanhtoanvnpay {
+  background: url("../../img/vnpay.jpg");
+  width: 150px;
+  height: 90px;
+  background-size: 100% 100%;
+  border-radius: 10px;
+  border: 2px solid grey;
+}
+#tienmat:checked ~ div .thanhtoantienmat {
+  box-shadow: -1px -1px 10px 3px #047baa;
+  border: 2px solid whitesmoke;
+}
+#vnpay:checked ~ div .thanhtoanvnpay {
+  box-shadow: -1px -1px 10px 3px #047baa;
+  border: 2px solid whitesmoke;
+}
+
+.thanhtoan .modal-content {
+  margin-top: -50px;
+}
+.modal button {
+    background-color: #047baa;
+    color: white;
+    padding: 7px 20px;
+    margin: 4px auto;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 10px;
+}
+.container{
+    padding: 20px;
+}
+h4{
+   margin: -5px 0;
+}
+.btn{
+    display: flex;
+    justify-content: space-between;
+}

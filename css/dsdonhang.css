@@ -1,0 +1,100 @@
+table, th, td{
+    border: 1px solid white;
+    border-collapse: collapse;
+   
+  }
+th{
+    background-color: rgb(54 140 238);
+    color: white;
+    font-weight: 500;
+}
+td{
+    background-color: rgb(218 255 253);
+}
+table{
+    text-align: center;
+    font-size: 0.8rem;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.img_sp{
+    width:100%; 
+    height: 100%;
+    border-radius: 3px;
+}
+
+.sp_icon{
+    margin: 0 5px 0 5px;
+}
+/* Quanli san pham */
+.qlsp_link{
+    text-decoration: none;
+    margin: 15px;
+    color: #777;
+    font-size: 0.9rem;
+}
+.qlsp_link:hover{
+    color: rgb(38, 112, 248);
+}
+.img_dh{
+    width: 80%;
+    height: 80%;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+.iconhd{
+    text-decoration: none;
+    flex-grow: 1;
+}
+.nutdh{
+    margin: 0;
+    width: 96%;
+    background-color: blue ;
+    color: white;
+    border-radius: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.nuthdh{
+    width: 96%;
+    color: white;
+    border-radius: 2px;
+    background-color: crimson;
+}
+.icon{
+    text-decoration: none;
+    color: rgb(238, 17, 190);
+    margin: 0 30px;
+}
+.icon-xem{
+    text-decoration: none;
+    color: blue;
+}
+.icon-sua{
+    text-decoration: none;
+    color: black;
+}
+.icon-xoa{
+    text-decoration: none;
+    color: red;
+}
+.timkiem{
+    margin: 5px;
+    border: 1px solid rgb(57, 10, 230);
+    border-radius: 2px;
+}
+.btn_themsp input{
+    padding: 5px;
+    width: 300px;
+    border: none;
+    outline: none;
+}
+.icon_timkiem{
+    border: none;
+    background: white;
+    color: rgb(57, 10, 230);
+}
+.nutxdh{
+    background: green;
+}
